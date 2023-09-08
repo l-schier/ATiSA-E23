@@ -3,9 +3,7 @@ name: CI/CD Workflow
   # Workflow triggers
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: []
   pull_request:
     branches:
       - main
@@ -15,8 +13,8 @@ on:
 env:
   PACKAGE_REGISTRY_TO_USE: nico8034
   DOCKER_IMAGE_NAME: lowercase-image-name
-  PROJECT_NAME: ProjectName
-  GROUP_NUMBER: GroupNumber #I.e  Group02
+  PROJECT_NAME: Minecraft2.0-Tekkit4.20
+  GROUP_NUMBER: Group04 #I.e  Group02
 
 jobs:
   # Create artifact of repository source code to use for consistensy accross all jobs
