@@ -425,3 +425,9 @@ hs_err_pid*
 replay_pid*
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,java
+*.bbl
+*.aux
+*.blg
+*.out
+*.pdf
+*.gz
