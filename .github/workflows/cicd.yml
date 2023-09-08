@@ -11,8 +11,8 @@ on:
 
   # Environment Variables
 env:
-  PACKAGE_REGISTRY_TO_USE: nico8034
-  DOCKER_IMAGE_NAME: lowercase-image-name
+  PACKAGE_REGISTRY_TO_USE: l-schier
+  DOCKER_IMAGE_NAME: architecture
   PROJECT_NAME: Minecraft2.0-Tekkit4.20
   GROUP_NUMBER: Group04 #I.e  Group02
 
