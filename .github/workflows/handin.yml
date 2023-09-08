@@ -20,7 +20,7 @@ on:
 
   # Environment Variables
 env:
-  DOCKER_IMAGE_NAME: lowercase-image-name
+  DOCKER_IMAGE_NAME: architecture
   PROJECT_NAME: Minecraft2.0-Tekkit4.20
   GROUP_NUMBER: Group04 #I.e  Group02 
 
