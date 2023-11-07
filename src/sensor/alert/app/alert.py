@@ -14,7 +14,7 @@ def generate_sensor_data():
 def connect_to_kafka():
     _producer = None
     try:
-        _producer = KafkaProducer(bootstrap_servers=["localhost:9092"])
+        _producer = KafkaProducer(bootstrap_servers=["kafka:9092"])
     except Exception as ex:
         print("Error while connecting to Kafka")
         print(str(ex))
@@ -34,7 +34,9 @@ if __name__ == "__main__":
     # Continuously generate mock sensor data and publish it to Kafka
     while True:
         sensor_data = generate_sensor_data()
-        producer = connect_to_kafka()
-        if producer is not None:
-            publish_alert(sensor_data, producer)
+        if sensor_data["temperature"] > 25 or sensor_data["humidity"] > 45 or sensor_data["pressure"] > 1005:
+            print("Alert: Temperature, Humidity or Pressure is above threshold")
+            producer = connect_to_kafka()
+            if producer is not None:
+                publish_alert(sensor_data, producer)
         time.sleep(1)
