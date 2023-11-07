@@ -9,10 +9,10 @@ const consumer: Consumer = kafka.consumer({ groupId: 'sensor-group' });
 
 const handleMessage = async ({ topic, partition, message }: EachMessagePayload): Promise<void> => {
     if (topic === 'alert') {
-        (document.getElementById('alertText') as HTMLParagraphElement).textContent = "ALERT";
-    } else {
-        (document.getElementById('alertText') as HTMLParagraphElement).textContent = "";
-    }
+        //(document.getElementById('alertText') as HTMLParagraphElement).textContent = "ALERT";
+        console.log(message);
+    } //else {
+    //(document.getElementById('alertText') as HTMLParagraphElement).textContent = "";}
 
     await consumer.commitOffsets([{ topic, partition, offset: message.offset }]);
 };
