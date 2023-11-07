@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="337px" preserveAspectRatio="none" style="width:1777px;height:337px;background:#FFFFFF;" version="1.1" viewBox="0 0 1777 337" width="1777px" zoomAndPan="magnify"><defs/><g><!--MD5=[66808ad8e3cb52d746dc86e1fe812f3d]
+entity pms--><g id="elem_pms"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="245" x="668.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="678.5" y="29.9951">Production Management System</text></g><!--MD5=[893b01c522ea618c375ef8b789c1bb17]
+entity sms--><g id="elem_sms"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="261" x="234.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="244.5" y="125.9951">Schedule Management Subsystem</text></g><!--MD5=[ded7cae38293fdbd4fb4dd4b701f5229]
+entity oms--><g id="elem_oms"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="235" x="530.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="540.5" y="125.9951">Order Management Subsystem</text></g><!--MD5=[ea64c9112f0e458f26ce80c96c2cc1e7]
+entity mms--><g id="elem_mms"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="269" x="800.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="810.5" y="125.9951">Monitoring Management Subsystem</text></g><!--MD5=[1a4112814025e7f7a7a73d7914f61634]
+entity scms--><g id="elem_scms"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="279" x="1216.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="259" x="1226.5" y="29.9951">Suplly Chain Management Subsystem</text></g><!--MD5=[e33b523cc849e445952cc08b29ea8147]
+entity ims--><g id="elem_ims"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="259" x="1104.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="239" x="1114.5" y="125.9951">Inventory Management Subsystem</text></g><!--MD5=[54e0b95ce0ae51e2c6c45ee15bee6e0d]
+entity rss--><g id="elem_rss"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="158" x="1399" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="1409" y="125.9951">Restock Subsystem</text></g><!--MD5=[b86e2134b60a66cfa5580c3c7f28e7f6]
+entity bds--><g id="elem_bds"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="179" x="1592.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="1602.5" y="125.9951">Breakdonw Subsystem</text></g><!--MD5=[0229850c6a1320d8c3e20469470bcd77]
+entity ems--><g id="elem_ems"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="167" x="281.5" y="199"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="291.5" y="221.9951">Edge Monitor System</text></g><!--MD5=[aee5dd3d50ebc89a5d8f3c5b227d8694]
+entity smos--><g id="elem_smos"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="206" x="7" y="295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="17" y="317.9951">Sensor Monitor Subsystem</text></g><!--MD5=[963c5476e2924e9730195f37b6d31c8c]
+entity stss--><g id="elem_stss"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="233" x="248.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="258.5" y="317.9951">Short-term Storage Subsystem</text></g><!--MD5=[0c90a063f9102be06b329ff1f25cf42c]
+entity cdss--><g id="elem_cdss"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="218" x="1531" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="1541" y="29.9951">Central Data Storage System</text></g><!--MD5=[d5096230de5c7e9b5a3d1997ba7f37f3]
+entity cs--><g id="elem_cs"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="183" x="450.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="460.5" y="29.9951">Communication System</text></g><!--MD5=[72f941736658486a9447ee9af01ffec8]
+entity ss--><g id="elem_ss"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="606" y="199"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="616" y="221.9951">Sensor System</text></g><!--MD5=[a9d198bd5c1c9d64f3f6943bebfbf470]
+entity as--><g id="elem_as"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="132" x="517" y="295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="527" y="317.9951">Alert Subsystem</text></g><!--MD5=[5afec40478bd2c44543bda9262cdccd2]
+entity ns--><g id="elem_ns"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="177" x="684.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="694.5" y="317.9951">Notification Subsystem</text></g><!--MD5=[fd58e2796c9989cd652f3fccb70066e1]
+entity pems--><g id="elem_pems"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="231" x="955.5" y="199"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="965.5" y="221.9951">Personel Management System</text></g><!--MD5=[6857688d619609624168cacb5f029075]
+entity ps--><g id="elem_ps"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="896.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="906.5" y="317.9951">Pager Subsystem</text></g><!--MD5=[6afc1b6e81b97a2687dd1bdc432821cc]
+entity wss--><g id="elem_wss"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="205" x="1072.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="1082.5" y="317.9951">Work Schedule Subsystem</text></g><!--MD5=[10e07f00115a3c1f6a12d711f575f2ce]
+entity pls--><g id="elem_pls"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="145" x="1312.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="1322.5" y="317.9951">Payroll Subsystem</text></g><!--MD5=[f81058cbc6b44a084bea6d80298e262c]
+link pms to sms--><g id="link_pms_sms"><path d="M713.85,43.02 C636.89,60.01 519.31,85.95 442.29,102.95 " fill="none" id="pms-sms" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a373a017461dd13588345b8a0ef9dabd]
+link pms to oms--><g id="link_pms_oms"><path d="M765.1,43.02 C739.35,59.95 700.04,85.79 674.19,102.79 " fill="none" id="pms-oms" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c99c9c66f4dd7afb4b3a0f4bc0c3430b]
+link pms to mms--><g id="link_pms_mms"><path d="M817.08,43.02 C843.01,59.95 882.59,85.79 908.63,102.79 " fill="none" id="pms-mms" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7497e7a55487c0618b8b6991741bc684]
+link scms to ims--><g id="link_scms_ims"><path d="M1333.91,43.02 C1311.93,59.95 1278.4,85.79 1256.34,102.79 " fill="none" id="scms-ims" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[27682da738dad09e5a8ec1bd89fa35e2]
+link scms to rss--><g id="link_scms_rss"><path d="M1378.09,43.02 C1400.07,59.95 1433.6,85.79 1455.66,102.79 " fill="none" id="scms-rss" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[190280694e57da11136b741c5f5a0899]
+link scms to bds--><g id="link_scms_bds"><path d="M1415.04,43.02 C1473.93,60.01 1563.92,85.95 1622.85,102.95 " fill="none" id="scms-bds" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4a78bae1377116d1a841da911f1b24b8]
+link ems to smos--><g id="link_ems_smos"><path d="M318.82,235.02 C272.75,252.01 202.37,277.95 156.27,294.95 " fill="none" id="ems-smos" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7649748260e2a08c64cae7df2ef3604f]
+link ems to stss--><g id="link_ems_stss"><path d="M365,235.24 C365,252.2 365,277.95 365,294.87 " fill="none" id="ems-stss" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d90d6b4da1ae425781a3dab857d75045]
+link ss to as--><g id="link_ss_as"><path d="M652.41,235.24 C637.07,252.2 613.79,277.95 598.49,294.87 " fill="none" id="ss-as" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2e25c0b1744fae26ed557cc05330f2b9]
+link ss to ns--><g id="link_ss_ns"><path d="M687.26,235.24 C706.2,252.2 734.96,277.95 753.86,294.87 " fill="none" id="ss-ns" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[437d9ec7f2a32fb46fc003cd7d438fba]
+link pems to ps--><g id="link_pems_ps"><path d="M1051.92,235.24 C1033.16,252.2 1004.68,277.95 985.95,294.87 " fill="none" id="pems-ps" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0bb969c622721ecdfcd1034796f48f82]
+link pems to wss--><g id="link_pems_wss"><path d="M1090.08,235.24 C1108.84,252.2 1137.32,277.95 1156.05,294.87 " fill="none" id="pems-wss" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[aaf99ffe2e08e09e08a863f0bee223f4]
+link pems to pls--><g id="link_pems_pls"><path d="M1127.86,235.02 C1184.59,252.01 1271.26,277.95 1328.03,294.95 " fill="none" id="pems-pls" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[98117a1937e08109a27ab802709b384c]
+link pms to scms--><!--MD5=[334673d0ac765659df4729d62a313a5d]
+link cs to pms--><!--MD5=[0f1e8dfea3560aece7914b39a30ea6c0]
+link sms to ems--><!--MD5=[515722ffe69e5ceee7a6b7bddb0bf1da]
+link ems to ss--><!--MD5=[ed87539a3924d3a179ee7e6aabe52d06]
+link ss to pems--><!--MD5=[a013a441b6c6187a3ceeb762ed89e5db]
+@startuml systems
+rectangle "Production Management System" as pms
+rectangle "Schedule Management Subsystem" as sms
+rectangle "Order Management Subsystem" as oms
+rectangle "Monitoring Management Subsystem" as mms
+
+rectangle "Suplly Chain Management Subsystem" as scms
+rectangle "Inventory Management Subsystem" as ims
+rectangle "Restock Subsystem" as rss
+rectangle "Breakdonw Subsystem" as bds
+
+rectangle "Edge Monitor System" as ems
+rectangle "Sensor Monitor Subsystem" as smos
+rectangle "Short-term Storage Subsystem" as stss
+
+rectangle "Central Data Storage System" as cdss
+rectangle "Communication System" as cs
+
+rectangle "Sensor System" as ss
+rectangle "Alert Subsystem" as as
+rectangle "Notification Subsystem" as ns
+
+rectangle "Personel Management System" as pems
+rectangle "Pager Subsystem" as ps
+rectangle "Work Schedule Subsystem" as wss
+rectangle "Payroll Subsystem" as pls
+
+pms - - sms
+pms - - oms
+pms - - mms
+
+scms - - ims
+scms - - rss
+scms - - bds
+
+ems - - smos
+ems - - stss
+
+
+ss - - as
+ss - - ns
+
+pems - - ps
+pems - - wss
+pems - - pls
+
+pms -[hidden]r- scms
+pms -[hidden]l- cs
+sms -[hidden]d- ems
+ss -[hidden]l- ems
+ss -[hidden]r- pems
+
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

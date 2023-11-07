@@ -1,0 +1,54 @@
+@startuml systems
+rectangle "Production Management System" as pms
+rectangle "Schedule Management Subsystem" as sms
+rectangle "Order Management Subsystem" as oms
+rectangle "Monitoring Management Subsystem" as mms
+
+rectangle "Suplly Chain Management Subsystem" as scms
+rectangle "Inventory Management Subsystem" as ims
+rectangle "Restock Subsystem" as rss
+rectangle "Breakdonw Subsystem" as bds
+
+rectangle "Edge Monitor System" as ems
+rectangle "Sensor Monitor Subsystem" as smos
+rectangle "Short-term Storage Subsystem" as stss
+
+rectangle "Central Data Storage System" as cdss
+rectangle "Communication System" as cs
+
+rectangle "Sensor System" as ss
+rectangle "Alert Subsystem" as as
+rectangle "Notification Subsystem" as ns
+
+rectangle "Personel Management System" as pems
+rectangle "Pager Subsystem" as ps
+rectangle "Work Schedule Subsystem" as wss
+rectangle "Payroll Subsystem" as pls
+
+pms -- sms
+pms -- oms
+pms -- mms
+
+scms -- ims
+scms -- rss
+scms -- bds
+
+ems -- smos
+ems -- stss
+
+
+ss -- as
+ss -- ns
+
+pems -- ps
+pems -- wss
+pems -- pls
+
+pms -[hidden]r- scms
+pms -[hidden]l- cs
+sms -[hidden]d- ems
+ss -[hidden]l- ems
+ss -[hidden]r- pems
+
+
+@enduml
