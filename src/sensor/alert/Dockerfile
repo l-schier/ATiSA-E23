@@ -9,4 +9,4 @@ COPY ./app .
 #    && apt-get install python3-pip -y
 RUN pip install -r requirements.txt
 # Run app.py when the container launches
-CMD ["python", "alert.py"]
+CMD ["python", "-u", "alert.py"]

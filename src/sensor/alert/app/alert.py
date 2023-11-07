@@ -1,6 +1,7 @@
 import time
 import random
-from kafka import KafkaProducer
+from confluent_kafka import Producer
+from confluent_kafka.admin import AdminClient, NewTopic
 
 # Define function to generate mock sensor data
 def generate_sensor_data():
@@ -11,32 +12,54 @@ def generate_sensor_data():
     }
     return sensor_data
 
-def connect_to_kafka():
+'''def connect_to_kafka():
     _producer = None
     try:
-        _producer = KafkaProducer(bootstrap_servers=["kafka:9092"])
+        _producer = 
     except Exception as ex:
         print("Error while connecting to Kafka")
         print(str(ex))
     finally:
-        return _producer
+        return _producer'''
 
 # Define function to publish sensor data to Kafka
 def publish_alert(sensor_data, producer):
-    producer.send("alert", value=sensor_data)
-    producer.send()
+    for d in sensor_data:
+        producer.produce("alert", key=d[0], value=d[1].encode("utf-8"))
+        producer.flush()
+    #producer.send()
 
+def startup(admin):
+    new_topic = NewTopic("alert", num_partitions=1, replication_factor=1)
+    x = admin.create_topics([new_topic])
+    for topic, t in x.items():
+        try:
+            t.result()
+            print(f"Topic {topic} created")
+            return True
+        except Exception as e:
+            print(f"Failed to create topic {topic}: {e}")
+            return False
+    
 
 if __name__ == "__main__":
+    # Create Kafka producer
     print("Running Sensor Data Generator")
     print("Press Ctrl + C to terminate program")
     print("-------------------------------")
+    print("Wait for Kafka to be up and running")
+    time.sleep(10)
+    print("Create admin and producer")
+    admin = AdminClient({"bootstrap.servers": "kafka:19092"})
+    producer = Producer({'bootstrap.servers': 'kafka:19092'})
+    startup(admin)
     # Continuously generate mock sensor data and publish it to Kafka
     while True:
+        print("Generating sensor data")
         sensor_data = generate_sensor_data()
         if sensor_data["temperature"] > 25 or sensor_data["humidity"] > 45 or sensor_data["pressure"] > 1005:
             print("Alert: Temperature, Humidity or Pressure is above threshold")
-            producer = connect_to_kafka()
+            #producer = connect_to_kafka()
             if producer is not None:
                 publish_alert(sensor_data, producer)
-        time.sleep(1)
+        time.sleep(5)
