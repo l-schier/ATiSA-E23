@@ -1,0 +1,15 @@
+version: '3'
+include:
+  - communication/docker-compose.yml
+
+services:
+  sensor-alert:
+    build:
+      context: ./sensor/alert
+      dockerfile: Dockerfile
+    container_name: sensor-alert
+  sensor-system:
+    build:
+      context: ./sensor/SensorSystem
+      dockerfile: Dockerfile
+    container_name: sensor-system
