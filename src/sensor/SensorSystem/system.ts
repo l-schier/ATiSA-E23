@@ -2,7 +2,7 @@ import { type EachMessagePayload, Kafka, Consumer } from 'kafkajs';
 
 const kafka = new Kafka({
     clientId: 'sensor-consumer',
-    brokers: ['kafka:9092'],
+    brokers: ['kafka:19092'],
 });
 
 const consumer: Consumer = kafka.consumer({ groupId: 'sensor-group' });
