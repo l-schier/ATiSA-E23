@@ -25,3 +25,14 @@ services:
       - zookeeper
     networks:
       - kafka_default
+
+  sensor-system-2:
+    build:
+      context: ./sensor/SensorSystem
+      dockerfile: Dockerfile
+    container_name: sensor-system-2
+    depends_on:
+      - kafka
+      - zookeeper
+    networks:
+      - kafka_default

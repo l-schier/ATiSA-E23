@@ -10,7 +10,7 @@ const consumer: Consumer = kafka.consumer({ groupId: 'sensor-group' });
 const handleMessage = async ({ topic, partition, message }: EachMessagePayload): Promise<void> => {
     if (topic === 'alert') {
         //(document.getElementById('alertText') as HTMLParagraphElement).textContent = "ALERT";
-        console.log(message);
+        console.log(`Key: ${message.key} Value: ${message.value}`);
     } //else {
     //(document.getElementById('alertText') as HTMLParagraphElement).textContent = "";}
 

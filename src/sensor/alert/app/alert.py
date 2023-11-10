@@ -24,9 +24,12 @@ def generate_sensor_data():
 
 # Define function to publish sensor data to Kafka
 def publish_alert(sensor_data, producer):
-    for d in sensor_data:
-        producer.produce("alert", key=d[0], value=d[1].encode("utf-8"))
-        producer.flush()
+    producer.produce("alert", key="temperature", value=str(sensor_data["temperature"]))
+    producer.flush()
+    producer.produce("alert", key="humidity", value=str(sensor_data["humidity"]))
+    producer.flush()
+    producer.produce("alert", key="pressure", value=str(sensor_data["pressure"]))
+    producer.flush()
     #producer.send()
 
 def startup(admin):
@@ -48,7 +51,7 @@ if __name__ == "__main__":
     print("Press Ctrl + C to terminate program")
     print("-------------------------------")
     print("Wait for Kafka to be up and running")
-    time.sleep(10)
+    time.sleep(15)
     print("Create admin and producer")
     admin = AdminClient({"bootstrap.servers": "kafka:19092"})
     producer = Producer({'bootstrap.servers': 'kafka:19092'})
