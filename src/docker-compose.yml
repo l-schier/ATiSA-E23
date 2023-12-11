@@ -3,11 +3,11 @@ include:
   - communication/docker-compose.yml
 
 services:
-  sensor-alert:
+  sensor-alert-1:
     build:
       context: ./sensor/alert
       dockerfile: Dockerfile
-    container_name: sensor-alert
+    container_name: sensor-alert-1
     depends_on:
       - kafka
       - zookeeper
@@ -15,11 +15,23 @@ services:
     networks:
       - kafka_default
 
-  sensor-system:
+  sensor-alert-2:
+    build:
+      context: ./sensor/alert
+      dockerfile: Dockerfile
+    container_name: sensor-alert-2
+    depends_on:
+      - kafka
+      - zookeeper
+    restart: always
+    networks:
+      - kafka_default
+
+  sensor-system-1:
     build:
       context: ./sensor/SensorSystem
       dockerfile: Dockerfile
-    container_name: sensor-system
+    container_name: sensor-system-1
     depends_on:
       - kafka
       - zookeeper
@@ -31,6 +43,17 @@ services:
       context: ./sensor/SensorSystem
       dockerfile: Dockerfile
     container_name: sensor-system-2
+    depends_on:
+      - kafka
+      - zookeeper
+    networks:
+      - kafka_default
+
+  sensor-system-3:
+    build:
+      context: ./sensor/SensorSystem
+      dockerfile: Dockerfile
+    container_name: sensor-system-3
     depends_on:
       - kafka
       - zookeeper
