@@ -1,0 +1,81 @@
+@startuml
+
+hide empty members
+
+object "Communication System" as bus {
+    ............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+}
+
+package "Production Management Systems" {
+    object "Production Management System" as pms
+    Object "Scheduling Management Subsystem" as sms
+    Object "Monitoring Management Subsystem" as mms
+    Object "Order Management Subsystem" as oms
+}
+
+package "Supply Chain Management System" {
+    object "Supply Chain Management System" as scms
+    object "Inventory Management Subsystem" as ims
+    object "Restock Subsystem" as rs
+    object "Breakdown Subsystem" as bs
+}
+
+package "Edge Monitor System" {
+    object "Edge Monitor System" as ems
+    object "Sensor Monitor Subsystem" as sms_
+    object "Short term Storage Subsystem" as stss
+}
+
+object "Central Data Storage system" as cdss
+
+package "Sensor System" {
+    object "Sensor System" as ss
+    object "Alert Subsystem" as _as
+    object "Notification Subsystem" as ns
+}
+
+package "Personel Management System" {
+    object "Personel Management System" as pms_
+    object "Pager Subsystem" as ps
+    object "Work Schedule Subsystem" as wss
+    object "Payroll Management Subsystem" as pms__
+}
+
+pms <-down-> bus
+
+sms <-down-> bus
+
+mms <-down-> bus
+
+oms -down-> bus
+
+scms <-up-> bus
+
+ims <-up-> bus
+
+rs <-up- bus
+
+bs <-up-> bus
+
+ems <-up-> bus
+
+sms_ -up-> bus
+
+stss <-up-> bus
+
+cdss <-up-> bus
+
+ss -down-> bus
+
+_as <-up-> bus
+
+ns <-up-> bus
+
+pms_ <-down-> bus
+
+ps <-down-> bus
+
+wss <-down-> bus
+
+pms__ <-down- bus
+@enduml
