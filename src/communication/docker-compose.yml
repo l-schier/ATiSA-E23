@@ -38,7 +38,10 @@ services:
       KAFKA_JMX_HOSTNAME: ${DOCKER_HOST_IP:-127.0.0.1}
       KAFKA_AUTHORIZER_CLASS_NAME: kafka.security.authorizer.AclAuthorizer
       KAFKA_ALLOW_EVERYONE_IF_NO_ACL_FOUND: "true"
-      KAFKA_SESSION_TIMEOUT_MS: 10000
+      KAFKA_GROUP_MIN_SESSION_TIMEOUT_MS: 3000
+      KAFKA_GROUP_MAX_SESSION_TIMEOUT_MS: 10000
+      KAFKA_HEARTBEAT_INTERVAL_MS: 1000
+      #KAFKA_MAX_PARTITION_FETCH_BYTES: 1024
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:

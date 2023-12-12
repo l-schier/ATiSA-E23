@@ -15,23 +15,12 @@ services:
     networks:
       - kafka_default
 
-  sensor-alert-2:
-    build:
-      context: ./sensor/alert
-      dockerfile: Dockerfile
-    container_name: sensor-alert-2
-    depends_on:
-      - kafka
-      - zookeeper
-    restart: always
-    networks:
-      - kafka_default
-
   sensor-system-1:
     build:
       context: ./sensor/SensorSystem
       dockerfile: Dockerfile
     container_name: sensor-system-1
+    restart: always
     depends_on:
       - kafka
       - zookeeper
@@ -43,6 +32,7 @@ services:
       context: ./sensor/SensorSystem
       dockerfile: Dockerfile
     container_name: sensor-system-2
+    restart: always
     depends_on:
       - kafka
       - zookeeper
@@ -54,6 +44,7 @@ services:
       context: ./sensor/SensorSystem
       dockerfile: Dockerfile
     container_name: sensor-system-3
+    restart: always
     depends_on:
       - kafka
       - zookeeper

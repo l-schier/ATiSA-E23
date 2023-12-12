@@ -5,7 +5,7 @@ const kafka = new Kafka({
     brokers: ['kafka:19092'],
 });
 
-const consumer: Consumer = kafka.consumer({ groupId: 'sensor-group' });
+const consumer: Consumer = kafka.consumer({ groupId: 'sensor-group', sessionTimeout: 5500, heartbeatInterval: 100 });
 
 const handleMessage = async ({ topic, partition, message }: EachMessagePayload): Promise<void> => {
     if (topic === 'alert') {
