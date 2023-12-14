@@ -1,0 +1,32 @@
+@startuml
+
+hide empty members
+
+object "Communication System" as bus
+
+Object "Production Management System" as pms
+
+object "Supply Chain Management System" as scms
+
+object "Edge Monitor System" as ems
+
+object "Central Data Storage system" as cdss
+
+object "Sensor System" as ss
+
+object "Personel Management System" as pms_
+
+pms <-down-> bus
+
+scms <-up-> bus
+
+ems <-up-> bus
+
+cdss <-up-> bus
+
+ss <-down-> bus
+
+pms_ <-down-> bus
+
+
+@enduml
